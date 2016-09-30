@@ -1,0 +1,11 @@
+#######################################################################
+## Warning: Puppet managed file, do NOT edit or changes will be lost ##
+#######################################################################
+
+[<%= @title %>]
+name=<%= @name %>
+<% if @mirrorlist %>mirrorlist=<%= @mirrorlist %><% end %>
+<% if @baseurl %>baseurl=<%= @baseurl %><% end %>
+gpgcheck=<%= @gpgcheck %>
+<% if @gpgkey %>gpgkey=<%= @gpgkey %><% end %>
+enabled=<%= @enabled %>

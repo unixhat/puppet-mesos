@@ -1,0 +1,44 @@
+{
+	"classes": 
+	[
+		"cluster",
+		"container",
+		"provision",
+		"yum"
+	],
+
+        "provision::instances":
+        {
+                "centos":
+                {
+                        "id": "centos",
+                        "scale": "2",
+                        "cpus": "0.25",
+                        "mem": "0.1",
+                        "type": "DOCKER",
+                        "typelow": "docker",
+                        "image": "centos",
+                        "network": "BRIDGE",
+                        "cmd": "while [ true ] ; do echo 'Ampe manyun' ; sleep 5 ; done"
+                }
+        },
+
+        "yum::repositories":
+        {
+                "mesosphere":
+                {
+                        "name": "Mesosphere Packages for EL 7 - $basearch",
+                        "baseurl": "http://repos.mesosphere.com/el/7/$basearch/",
+                        "gpgcheck": 0,
+                        "enabled": 1
+                },
+
+                "mesosphere-noarch":
+                {
+                        "name": "Mesosphere Packages for EL 7 - noarch",
+                        "baseurl": "http://repos.mesosphere.com/el/7/noarch/",
+                        "gpgcheck": 0,
+                        "enabled": 1
+                }
+        }
+}

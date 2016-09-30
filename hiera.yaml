@@ -1,0 +1,8 @@
+---
+:backends:
+  - json
+:json:
+  :datadir: /etc/puppetlabs/puppet/hiera
+:hierarchy:
+  - nodes/%{::hostname}
+  - common

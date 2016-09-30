@@ -1,0 +1,14 @@
+{
+        "id": "<%= @id %>",
+        "instances": <%= @scale %>,
+        "cpus": <%= @cpus %>,
+        "mem": <%= @mem %>,
+        "cmd": <%= @cmd %>,
+        "container": {
+            "type": "<%= @type %>",
+           "<%= @typelow %>": {
+                "image": "<%= @image %>",
+                "network": "<%= @network %>"
+    }
+  }
+}

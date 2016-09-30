@@ -1,0 +1,12 @@
+{
+	"classes":
+	[
+		"provision"
+	],
+
+	"roles": 
+	[
+		"mesos_masterslave",
+		"docker"
+	]
+}

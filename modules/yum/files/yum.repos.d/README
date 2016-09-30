@@ -1,0 +1,6 @@
+#######################################################################
+## Warning: Puppet managed file, do NOT edit or changes will be lost ##
+#######################################################################
+
+Files in this directory are managed by Puppet. Do not add any files
+manually or files will be purged automatically.
